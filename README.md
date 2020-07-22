@@ -16,8 +16,8 @@ quite Xcode and restart it. you can run your projects successfully in your real 
 ![DeveloperDiskImage](DeveloperDiskImage.png)
 
 ## Auto
-`sudo python3 install.py`  
+`sudo python install.py`  
 
 or 
 
-`curl https://raw.githubusercontent.com/pdso/DeveloperDiskImage/master/install.py | sudo python3 -`
+`curl https://raw.githubusercontent.com/pdso/DeveloperDiskImage/master/install.py | sudo python -`
