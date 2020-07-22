@@ -9,7 +9,7 @@ def getAllVersions():
   url = 'https://api.github.com/repos/pdso/DeveloperDiskImage/git/trees/master'
   data = urllib.request.urlopen(url).read()
   json_data = json.loads(data)
-  return [item.get('path') for item in json_data.get('tree')][0:-2]
+  return [item.get('path') for item in json_data.get('tree')][0:-3]
 
 def downloadDiskImage(version):
   # https://raw.githubusercontent.com/user/repository/branch/filename
