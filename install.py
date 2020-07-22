@@ -33,9 +33,9 @@ if __name__ == "__main__":
   s = '\n'.join(versions)
   print(f'Support iOS DeveloperDiskImage Versions: \n\n{s}\n')
   default = versions[-1]
-  print(f"Please input the DeveloperDiskImage version your want, default is {default}: ")
+  message = f'Please input the DeveloperDiskImage version your want, default is {default}: '
   default = 14.0
-  x = input()
+  x = input(message)
   if x == "":
     downloadDiskImage(default)
   elif x in ['14.0']:
