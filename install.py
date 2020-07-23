@@ -1,5 +1,6 @@
 import ssl
 import json
+import sys
 import os
 
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -30,20 +31,19 @@ def downloadDiskImage(version):
   print('\nDowloading DeveloperDiskImage.dmg.signature file')
   os.system(curl_signature)
   os.system('open .')
-
+  
 if __name__ == "__main__":
   versions = getAllVersions()
   s = '\n'.join(versions)
   print('Support iOS DeveloperDiskImage Versions: \n\n{}\n'.format(s))
   default = versions[-1]
   message = 'Please input the DeveloperDiskImage version your want, default is {}: '.format(default)
-  default = 14.0
   try:
     input = raw_input
   except NameError:
     pass
-  x = input(message)
-  if x == "":
+  x = input(message))
+  if x.isspace:
     downloadDiskImage(default)
   elif x in versions:
     downloadDiskImage(x)
