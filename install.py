@@ -42,7 +42,7 @@ if __name__ == "__main__":
     input = raw_input
   except NameError:
     pass
-  x = input(message))
+  x = input(message)
   if x.isspace:
     downloadDiskImage(default)
   elif x in versions:
