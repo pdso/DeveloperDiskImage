@@ -16,5 +16,5 @@ quite Xcode and restart it. you can run your projects successfully in your real 
 ![DeveloperDiskImage](DeveloperDiskImage.png)
 
 ## Auto
-`wget https://raw.githubusercontent.com/pdso/DeveloperDiskImage/master/install.py `
+`wget https://raw.githubusercontent.com/pdso/DeveloperDiskImage/master/install.py`  
 `sudo python install.py`
