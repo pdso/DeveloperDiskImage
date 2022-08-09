@@ -37,15 +37,13 @@ if __name__ == "__main__":
   s = '\n'.join(versions)
   print('Support iOS DeveloperDiskImage Versions: \n\n{}\n'.format(s))
   default = versions[-1]
-  message = 'Please input the DeveloperDiskImage version your want, default is {}: '.format(default)
+  message = 'Please input the DeveloperDiskImage version your want, Example: {}\n: '.format(default)
   try:
     input = raw_input
   except NameError:
     pass
   x = input(message)
-  if x.isspace:
-    downloadDiskImage(default)
-  elif x in versions:
+  if x in versions:
     downloadDiskImage(x)
   else:
     print('Not support version')
