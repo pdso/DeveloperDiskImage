@@ -14,7 +14,3 @@ Paste your extracted directory to that place
 quite Xcode and restart it. you can run your projects successfully in your real device  
 
 ![DeveloperDiskImage](DeveloperDiskImage.png)
-
-## Auto
-`wget https://raw.githubusercontent.com/pdso/DeveloperDiskImage/master/install.py`  
-`sudo python install.py`
